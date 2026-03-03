@@ -354,6 +354,8 @@
 -analyzer:"D:/Unity/2022.3.27f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/BallCatcher.cs"
 "Assets/Scripts/BallSpawner.cs"
+"Assets/Scripts/GameManager.cs"
+"Assets/Scripts/MissZone.cs"
 "Assets/Scripts/PlayerMovement.cs"
 -langversion:9.0
 /deterministic

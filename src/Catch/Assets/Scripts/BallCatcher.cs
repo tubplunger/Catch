@@ -8,7 +8,7 @@ public class BallCatcher : MonoBehaviour
     {
         if (other.CompareTag("Ball"))
         {
-            Debug.Log("Ball caught!");
+            GameManager.Instance.AddScore(1);
 
             Destroy(other.gameObject);
         }

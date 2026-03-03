@@ -25,4 +25,9 @@ public class BallSpawner : MonoBehaviour
 
         Instantiate(ballPrefab, spawnPosition, Quaternion.identity);
     }
+
+    public void StopSpawning()
+    {
+        CancelInvoke();
+    }
 }
