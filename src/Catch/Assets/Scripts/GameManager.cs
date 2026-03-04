@@ -75,6 +75,10 @@ public class GameManager : MonoBehaviour
 
         player.enabled = false;
 
+        Rigidbody rb = player.GetComponent<Rigidbody>();
+        rb.velocity = Vector3.zero;
+        rb.angularVelocity = Vector3.zero;
+
         gameOverPanel.SetActive(true);
     }
 
