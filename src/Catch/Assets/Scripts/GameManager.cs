@@ -69,8 +69,6 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = true;
 
-        Debug.Log("Game over!");
-
         spawner.StopSpawning();
 
         player.enabled = false;
@@ -95,5 +93,16 @@ public class GameManager : MonoBehaviour
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quitting Game...");
+
+#if UNITY_EDITOR
+    UnityEditor.EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
 }
